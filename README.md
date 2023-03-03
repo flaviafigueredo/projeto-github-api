@@ -21,8 +21,8 @@ __________________________________________________
 
 ### Links
 
-- [Solução]()
-- [GitHub Pages]()
+- [Solução](https://github.com/flaviafigueredo/projeto-github-api)
+- [GitHub Pages](https://flaviafigueredo.github.io/projeto-github-api/)
 __________________________________________________
 
 ### Construído com
