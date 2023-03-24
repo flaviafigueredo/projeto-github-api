@@ -11,7 +11,7 @@ const screen = {
                                                 <p>👤 Seguindo: ${user.following}</p>
                                             </div>
                                         </div>
-                                    </div>`
+                                      </div>`
 
         let repositoriesItems = ""
         user.repositories.forEach(repo => repositoriesItems += `<li>
@@ -20,7 +20,7 @@ const screen = {
                                                                             <span>🍴 ${repo.forks}</span>
                                                                             <span>⭐ ${repo.stargazers_count}</span>
                                                                             <span>👀 ${repo.watchers}</span>
-                                                                            <span>👩‍💻 ${repo.language}</span>
+                                                                            <span>👩‍💻 ${repo.language ?? 'Não possui linguagem'}</span>
                                                                     </div>
                                                                 </li>`)
 
@@ -28,7 +28,7 @@ const screen = {
             this.userProfile.innerHTML += `<div class="repositories section">
                                                 <h2>Repositórios</h2>
                                                 <ul>${repositoriesItems}</ul>
-                                          </div>`
+                                           </div>`
         }
 
         let eventsItems = ""
@@ -46,9 +46,9 @@ const screen = {
 
         if (user.events.length > 0) {
             this.userProfile.innerHTML += `<div class="events">
-                                            <h2>Eventos</h2>
-                                            <ul>${eventsItems}</ul>
-                                          </div>`
+                                                <h2>Eventos</h2>
+                                                <ul>${eventsItems}</ul>
+                                           </div>`
         }
     },
     renderNotFound() {
